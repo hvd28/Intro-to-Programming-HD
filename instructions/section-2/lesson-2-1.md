@@ -76,7 +76,10 @@ Create a commit for the changes you made and add a message describing the change
 
 Push your commit to the remote repository (visible in GitHub):
 
-    git push
+    git push --set-upstream origin lesson-2-1
+
+(`--set-upstream origin lesson-2-1` is only needed the first time you push a particular branch: After that, just `git push` will suffice.
+If you forget, there will be an error message like this: `The current branch lesson-2-1 has no upstream branch.`)
 
 Check the log to make sure your commit has been published:
 
