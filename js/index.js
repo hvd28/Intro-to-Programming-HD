@@ -16,3 +16,5 @@ for (let i = 0; i < skills.length; i++) {
     skill.innerText = skills[i];
     skillsList.appendChild(skill);
 }
+
+/* Adding comments here because I borked my git process and need to get it to register that I have 1 new file and 1 updated file to be committed*/
