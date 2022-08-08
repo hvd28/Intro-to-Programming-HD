@@ -42,7 +42,8 @@ function messageSubmit(event) {
     removeButton.innerText = "remove"
     removeButton.type = "button"
 
-    removeButton.addEventListener("click", messageRemove);
+    // TODO: define messageRemove
+    // removeButton.addEventListener("click", messageRemove);
 
 
 
