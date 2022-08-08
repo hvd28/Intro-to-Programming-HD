@@ -46,5 +46,5 @@ function messageSubmit(event) {
 
 
 
-    document.getElementsByName("leave_message").reset()
+    document.getElementsByName("leave_message")[0].reset()
 }
