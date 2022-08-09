@@ -1,0 +1,94 @@
+/* BACKGROUND */
+body {
+    background-color: floralwhite;
+}
+
+/* TEXT */
+
+* {
+    font-family: Helvetica, sans-serif;
+}
+
+/* HEADER */
+header {
+    text-align: center;
+    font-weight: bold;
+    padding: 15px;
+    background-color: black;
+    color: mistyrose;
+}
+
+/* HEADINGS */
+h1 {
+    font-style: italic;
+    font-size: 22px;
+    background-color: black;
+    color: mistyrose;
+    width: fit-content;
+    padding: 5px;
+}
+
+/* ABOUT STYLE BLOCK */
+#about {
+    background-color: lightcoral;
+}
+
+#about img {
+    height: 250px;
+    width: 250px;
+    padding-top: 20px;
+    padding-left: 200px;
+
+}
+
+#about p {
+    width: 600px;
+    padding-left: 20px;
+    display: inline-block;
+}
+
+/* DIVIDERS */
+
+#aboutdiv, #connectdiv {
+    height: 10px;
+    background-color: black;
+}
+
+/* EXPERIENCE STYLE BLOCK */
+
+#experience {
+    padding-top: 10px;
+    display: inline-block;
+    width: 500px;
+}
+
+/* SKILLS STYLE BLOCK */
+
+#skills {
+    display: inline-block;
+    width: 300px;
+}
+
+#skills ul {
+    font-style: italic;
+}
+
+/* LEAVE A MESSAGE */
+
+#messageform input, textarea, button {
+    background-color: lightcoral;
+}
+
+/* MESSAGE LIST BLOCK */
+/* TO DO: this section in JS */
+
+/* FOOTER */
+footer {
+    padding: 10px;
+    font-size: 10px;
+    text-align: center;
+    background-color: black;
+    color: mistyrose;
+}
+
+/* MEDIA QUERIES/RESPONSIVE WEBPAGE STUFF */
