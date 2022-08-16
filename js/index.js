@@ -35,21 +35,20 @@ function messageSubmit(event) {
 
     /* MESSAGE LIST */
     const messageSection = document.getElementById("messages");
-    const messageList = document.querySelector("ul");
+    const messageList = messageSection.querySelector("ul");
     const newMessage = document.createElement("li");
     console.log(messageList);
 
-    newMessage.innerHTML = `<span>${message.value}<a href="mailto:${email.value}">email me!</a></span>`;
+    newMessage.innerHTML = `<span>${message.value} - ${name.value} @ <a href="mailto:${email.value}">${email.value} <br></a></span>`;
+    messageList.appendChild(newMessage);
 
     /* MESSAGE REMOVAL BUTTON */
     const removeButton = document.createElement("button")
     removeButton.innerText = "remove"
-    removeButton.type = "button"
+    removeButton.type = "button"    
+    newMessage.appendChild(removeButton)
 
-    // TO DO: define messageRemove
-    // removeButton.addEventListener("click", messageRemove);
-
-
+    removeButton.addEventListener("click", event => event.target.parentNode.remove())
 
     document.getElementsByName("leave_message")[0].reset()
 }
