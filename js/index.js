@@ -1,4 +1,5 @@
 
+/* FOOTER COPYRIGHT */
 let today = new Date();
 let thisYear = today.getFullYear();
 const footer = document.querySelector("footer");
@@ -7,7 +8,8 @@ copyright.innerHTML = `<span>Hannah Donnelly ${thisYear}</span>`;
 footer.appendChild(copyright);
 console.log(thisYear);
 
-const skills = ["Placeholder", "Placeholder2", "Placeholder3", "Placeholder4"];
+/* SKILLS SECTION */
+const skills = ["HTML", "JavaScript", "CSS", "Git"];
 const skillsSection = document.getElementById("skills");
 const skillsList = skillsSection.querySelector("ul");
 
@@ -17,6 +19,7 @@ for (let i = 0; i < skills.length; i++) {
     skillsList.appendChild(skill);
 }
 
+/* MESSAGE FORM */
 const messageForm = document.getElementsByName("leave_message")[0];
 
 messageForm.addEventListener("submit", messageSubmit);
@@ -30,19 +33,20 @@ function messageSubmit(event) {
     console.log("email", email.value)
     console.log("message", message.value)
 
-    const messageSection = getElementById("messages");
-    const messageList = querySelector("ul");
+    /* MESSAGE LIST */
+    const messageSection = document.getElementById("messages");
+    const messageList = document.querySelector("ul");
     const newMessage = document.createElement("li");
     console.log(messageList);
 
-    newMessage.innerHTML = '<a href="mailto:' + email.value + '">';
-    newMessage.innerHTML = <span>message.value</span>;
+    newMessage.innerHTML = `<span>${message.value}<a href="mailto:${email.value}">email me!</a></span>`;
 
+    /* MESSAGE REMOVAL BUTTON */
     const removeButton = document.createElement("button")
     removeButton.innerText = "remove"
     removeButton.type = "button"
 
-    // TODO: define messageRemove
+    // TO DO: define messageRemove
     // removeButton.addEventListener("click", messageRemove);
 
 
