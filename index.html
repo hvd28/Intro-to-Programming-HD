@@ -15,74 +15,93 @@
 
     <!-- HEADER -->
     <header> h a n n a h &nbsp;&nbsp; d o n n e l l y </header>
+    <div class="header-div"></div>
+
+    <!-- NAV -->
+    <div class="nav">
+        <div><a href="#about">about</a></div>
+        <div><a href="#experience">experience</a></div>
+        <div><a href="#skills">skills</a></div>
+        <div><a href="#connect">connect</a></div>
+    </div>
 
     <!-- ABOUT SECTION -->
-    <section id="about">
+    <div class="bio">
         <img src="images/portfolio portrait.png" alt="Hannah's portrait">
+        <section id="about">
             <p>Hi, I’m Hannah. :)
                 <br><br>
-                With a degree in Design & Merchandising from Drexel University and years of <br>Food, Beverage &
-                Hospitality
-                work under my belt, I’m one of the many people <br>out there working hard to make a major career change
-                and
-                move into <br>programming and STEM at large.
+                With a degree in Design & Merchandising from Drexel University and years of Food, Beverage &
+                Hospitality work under my belt, I’m one of the many people out there working hard to make a major career
+                change and move into programming and STEM at large.
             </p>
-    </section>
+        </section>
+    </div>
 
-    <!-- DIVIDER -->
-    <div id="aboutdiv"></div>
+    <!-- BLACK BAR DIVIDER -->
+    <div class="content-div"></div>
+
 
     <!-- EXPERIENCE SECTION -->
     <section id="experience">
         <h1>experience</h1>
 
-        <p>I'm currently in an introductory programming course through <br>an excellent organization called <strong>Code the Dream</strong>.
-            <br><br>Check back for updates!</p>
+        <p>I'm currently in an introductory programming course through an excellent organization called
+            <strong>Code the Dream</strong>.
+            <br><br>Check back for updates!
+        </p>
     </section>
 
     <!-- SKILLS SECTION -->
-    <section id="skills">
-        <h1>skills</h1>
-        <ul></ul>
-    </section>
+    <div class="skill-section">
+        <section id="skills">
+            <h1>skills</h1>
+            <ul></ul>
+        </section>
+    </div>
 
-    <!-- DIVIDER -->
-    <div id="connectdiv"></div>
+    <!-- BLACK BAR DIVIDER -->
+    <div class="content-div"></div>
 
-    <!-- CONNECT SECTION -->
-    <section id="connect">
-        <h1>connect</h1>
-        <ul>
-            <li><a href="mailto:hannah.v.donnelly@gmail.com">Email me</a></li>
-            <li><a href="https://github.com/hvd28">Check out my GitHub</a></li>
-        </ul>
-    </section>
+    <div class="contact">
+        <!-- CONNECT SECTION -->
+        <section id="connect">
+            <h1>connect</h1>
+            <ul>
+                <li><a href="mailto:hannah.v.donnelly@gmail.com">Email me</a></li>
+                <li><a href="https://github.com/hvd28">Check out my GitHub</a></li>
+            </ul>
+        </section>
 
-    <!-- LEAVE A MESSAGE SECTION -->
-    <section>
-        <h1>leave a message</h1>
-        <form name="leave_message" id="messageform">
-            <label for="name">Name:</label>
-            <br>
-            <input type="text" id="name" name="name" required="true">
-            <br><br>
-            <label for="email">Email:</label>
-            <br>
-            <input type="email" id="email" name="email" required="true">
-            <br><br>
-            <label for="message">Message:</label>
-            <br>
-            <textarea name="message" id="message" required="true"></textarea>
-            <br><br>
-            <button type="submit">submit</button>
-        </form>
-    </section>
+        <!-- BLACK BAR DIVIDER -->
+        <div class="content-div"></div>
 
-    <!-- MESSAGE LIST -->
-    <section id="messages">
-        <h1>messages</h1>
-        <ul></ul>
-    </section>
+        <!-- LEAVE A MESSAGE SECTION -->
+        <section>
+            <h1>leave a message</h1>
+            <form name="leave_message" id="messageform">
+                <label for="name">Name:</label>
+                <br>
+                <input type="text" id="name" name="name" required="true">
+                <br><br>
+                <label for="email">Email:</label>
+                <br>
+                <input type="email" id="email" name="email" required="true">
+                <br><br>
+                <label for="message">Message:</label>
+                <br>
+                <textarea name="message" id="message" required="true"></textarea>
+                <br><br>
+                <button type="submit">submit</button>
+            </form>
+        </section>
+
+        <!-- MESSAGE LIST -->
+        <section id="messages">
+            <h1>messages</h1>
+            <ul></ul>
+        </section>
+    </div>
 
     <!-- FOOTER -->
     <footer></footer>

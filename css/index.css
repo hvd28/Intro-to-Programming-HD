@@ -1,24 +1,19 @@
 /* BACKGROUND */
 body {
     background-color: floralwhite;
+    margin: 0;
 }
 
 /* TEXT */
-
 * {
     font-family: Helvetica, sans-serif;
 }
 
-/* HEADER */
-header {
-    text-align: center;
-    font-weight: bold;
-    padding: 15px;
-    background-color: black;
-    color: mistyrose;
+a {
+    color: inherit;
+    text-decoration: none;
 }
 
-/* HEADINGS */
 h1 {
     font-style: italic;
     font-size: 22px;
@@ -26,61 +21,117 @@ h1 {
     color: mistyrose;
     width: fit-content;
     padding: 5px;
+    margin-left: 2%;
 }
 
-/* ABOUT STYLE BLOCK */
-#about {
+/* HEADER & NAV */
+header {
+    text-align: center;
+    font-weight: bold;
+    padding: 10px;
+    background-color: black;
+    color: mistyrose;
+}
+
+.nav {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: black;
+    color: floralwhite;
+    padding: 0.5%;
+}
+
+.header-div {
+    height: 2px;
     background-color: lightcoral;
 }
 
-#about img {
-    height: 250px;
-    width: 250px;
-    padding-top: 20px;
-    padding-left: 200px;
-
+/* ABOUT STYLE BLOCK */
+.bio {
+    background-color: lightcoral;
+    padding: 1%;
+    display: flex;
 }
 
-#about p {
-    width: 600px;
-    padding-left: 20px;
-    display: inline-block;
+.bio img {
+    height: 50%;
+    width: 50%;
+    margin-right: 2%;
+    margin-left: 1%;
+}   
+
+.bio p {
+    margin-top: 10%;
+}
+
+@media (max-width: 500px) {
+    .bio {
+        display: block;
+        padding: 5%;
+    }
+    .bio img {
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
 }
 
 /* DIVIDERS */
-
-#aboutdiv, #connectdiv {
+.content-div {
     height: 10px;
     background-color: black;
 }
 
-/* EXPERIENCE STYLE BLOCK */
-
-#experience {
-    padding-top: 10px;
-    display: inline-block;
-    width: 500px;
+/* SKILLS & EXP */
+#experience p {
+    margin-left: 2%;
 }
 
-/* SKILLS STYLE BLOCK */
-
-#skills {
-    display: inline-block;
-    width: 300px;
-}
-
-#skills ul {
+.skill-section ul {
     font-style: italic;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 
-/* LEAVE A MESSAGE */
+.skill-section li {
+    border: 1px;
+    border-color: #000000;
+    border-style: solid;
+    list-style: none;
+    padding: 0.5%;
+}
 
-#messageform input, textarea, button {
+/* CONTACT */
+.contact ul {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.contact li {
+    border: 1px;
+    border-color: black;
+    border-style: solid;
+    list-style: none;
+    padding: 0.5%;
+}
+
+#messageform input,
+textarea,
+button {
     background-color: lightcoral;
 }
 
-/* MESSAGE LIST BLOCK */
-/* TO DO: this section in JS */
+#messageform {
+    margin-left: 2%;
+}
+
+#messages ul {
+    display: flexbox;
+}
 
 /* FOOTER */
 footer {
