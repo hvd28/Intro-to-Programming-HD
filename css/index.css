@@ -14,7 +14,7 @@ a {
     text-decoration: none;
 }
 
-h1 {
+h2 {
     font-style: italic;
     font-size: 22px;
     background-color: black;
@@ -84,7 +84,7 @@ header {
     background-color: black;
 }
 
-/* SKILLS & EXP */
+/* SKILLS EXP PROJECTS */
 #experience p {
     margin-left: 2%;
 }
@@ -92,7 +92,7 @@ header {
 .skill-section ul {
     font-style: italic;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: flex-start;
     flex-wrap: wrap;
 }
 
@@ -102,12 +102,29 @@ header {
     border-style: solid;
     list-style: none;
     padding: 0.5%;
+    margin: 0.75%;
+}
+
+#projects ul {
+    font-style: italic;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+#projects li {
+    border: 1px;
+    border-color: #000000;
+    border-style: solid;
+    list-style: none;
+    padding: 0.5%;
+    margin: 0.75%;
 }
 
 /* CONTACT */
 .contact ul {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: flex-start;
     flex-wrap: wrap;
 }
 
@@ -117,6 +134,7 @@ header {
     border-style: solid;
     list-style: none;
     padding: 0.5%;
+    margin: 0.75%;
 }
 
 #messageform input,
