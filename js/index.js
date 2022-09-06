@@ -9,7 +9,7 @@ footer.appendChild(copyright);
 console.log(thisYear);
 
 /* SKILLS SECTION */
-const skills = ["HTML", "JavaScript", "CSS", "Git"];
+const skills = ["HTML", "JavaScript", "CSS", "Git", "Fetch API"];
 const skillsSection = document.getElementById("skills");
 const skillsList = skillsSection.querySelector("ul");
 
