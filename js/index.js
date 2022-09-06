@@ -53,23 +53,25 @@ function messageSubmit(event) {
     document.getElementsByName("leave_message")[0].reset()
 }
 
-const githubRequest = new XMLHttpRequest();
-githubRequest.open("GET", "https://api.github.com/users/hvd28/repos");
-githubRequest.send();
+fetch("https://api.github.com/users/hvd28/repos")
+    .then(function(response) {
+        return response.json()
+    })
+    
+    .then(function(response){
+            const repositories = response
+            console.log(repositories)
+        
+            const projectSection = document.getElementById("projects")
+        const projectList = projectSection.querySelector("ul")
+        
+        for (let i = 0; i < repositories.length; i++) {
+            const project = document.createElement("li")
+            project.innerText = repositories[i].name
+            projectList.appendChild(project)
+        }
+    })
 
-githubRequest.addEventListener("load", loadRepos);
-
-function loadRepos(event) {
-    const repositories = JSON.parse(githubRequest.response)
-    console.log(repositories)
-
-    const projectSection = document.getElementById("projects")
-const projectList = projectSection.querySelector("ul")
-
-for (let i = 0; i < repositories.length; i++) {
-    const project = document.createElement("li")
-    project.innerText = repositories[i].name
-    projectList.appendChild(project)
-}
-}
-
+    .catch((error) => {
+        console.error(error)
+    })
