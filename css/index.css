@@ -56,14 +56,19 @@ header {
 }
 
 .bio img {
-    height: 50%;
-    width: 50%;
+    height: 25%;
+    width: 25%;
     margin-right: 2%;
     margin-left: 1%;
-}   
+}
 
 .bio p {
+    margin-top: 5%;
+}
+
+.bio h2 {
     margin-top: 10%;
+    margin-left: 0;
 }
 
 @media (max-width: 500px) {
@@ -71,10 +76,16 @@ header {
         display: block;
         padding: 5%;
     }
+
     .bio img {
+        height: 50%;
+        width: 50%;
         margin-left: auto;
         margin-right: auto;
         display: block;
+    }
+    p, li {
+        font-size: 14pt;
     }
 }
 
@@ -154,7 +165,7 @@ button {
 /* FOOTER */
 footer {
     padding: 10px;
-    font-size: 10px;
+    font-size: 12px;
     text-align: center;
     background-color: black;
     color: mistyrose;
