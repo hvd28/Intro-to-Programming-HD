@@ -45,7 +45,7 @@ function messageSubmit(event) {
     /* MESSAGE REMOVAL BUTTON */
     const removeButton = document.createElement("button")
     removeButton.innerText = "remove"
-    removeButton.type = "button"    
+    removeButton.type = "button"
     newMessage.appendChild(removeButton)
 
     removeButton.addEventListener("click", event => event.target.parentNode.remove())
@@ -54,20 +54,20 @@ function messageSubmit(event) {
 }
 
 fetch("https://api.github.com/users/hvd28/repos")
-    .then(function(response) {
+    .then(function (response) {
         return response.json()
     })
-    
-    .then(function(response){
-            const repositories = response
-            console.log(repositories)
-        
-            const projectSection = document.getElementById("projects")
+
+    .then(function (response) {
+        const repositories = response
+        console.log(repositories)
+
+        const projectSection = document.getElementById("projects")
         const projectList = projectSection.querySelector("ul")
-        
+
         for (let i = 0; i < repositories.length; i++) {
             const project = document.createElement("li")
-            project.innerText = repositories[i].name
+            project.innerHTML = `<a href=${repositories[i].html_url}>${repositories[i].name}</a>`
             projectList.appendChild(project)
         }
     })
